@@ -249,6 +249,17 @@ router.get('/:id', getBookById);
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/Review'
+ *             example:
+ *               _id: "682c8bead1d34899178d26ff"
+ *               book: "682b7f81caa77a6dfac230d6"
+ *               user:
+ *                 _id: "682b720faab5e3b913a21ef1"
+ *                 username: "Royston"
+ *               rating: 5
+ *               comment: "This book was a fantastic read, highly recommended!"
+ *               createdAt: "2025-05-20T14:04:26.999Z"
+ *               updatedAt: "2025-05-20T14:04:27.010Z"
+ *               __v: 0
  *       400:
  *         description: Bad request (e.g., validation error, already reviewed)
  *         content:
