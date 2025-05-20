@@ -8,7 +8,7 @@ const swaggerDefinition = {
         version: '1.0.0',
         description: 'A RESTful API for a basic Book Review system. This API allows users to register, login, manage books, and submit reviews for them. All protected routes require JWT authentication.',
         license: {
-            name: 'MIT', // Or your preferred license
+            name: 'MIT',
             url: 'https://opensource.org/licenses/MIT',
         },
     },
