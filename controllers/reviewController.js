@@ -45,6 +45,10 @@ const addReview = async (req, res) => {
         if (err.code === 11000) { // Duplicate key error (user already reviewed)
             return res.status(400).json({ message: 'You have already reviewed this book.' });
         }
+        // Check for Mongoose CastError, which happens with invalid ObjectId format
+        if (err.kind === 'ObjectId') {
+            return res.status(404).json({ message: 'Book not found' });
+        }
         res.status(500).send('Server Error');
     }
 };
