@@ -24,8 +24,12 @@ const addBook = async (req, res) => {
             addedBy: req.user.id, // From authMiddleware
         });
 
-        const book = await newBook.save();
-        res.status(201).json(book);
+        let savedBook = await newBook.save();
+
+        // Populate the addedBy field with specific user details for the response
+        // Ensure the fields 'username', 'email', '_id', 'createdAt' match your User model and desired output
+        const populatedBook = await Book.findById(savedBook._id).populate('addedBy', 'username email _id createdAt');
+        res.status(201).json(populatedBook);
     } catch (err) {
         console.error(err.message);
         if (err.code === 11000) { // Duplicate key error for ISBN
