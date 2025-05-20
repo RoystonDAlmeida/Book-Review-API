@@ -64,9 +64,12 @@ const { check } = require('express-validator');
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/Error'
- *             example:
- *               message: "Not authorized, no token"
+ *               $ref: '#/components/schemas/Error' # General error schema
+ *             examples: # Using 'examples' for multiple scenarios or more descriptive single ones
+ *               NotOwner: # A key for this specific example
+ *                 value: { "message": "User not authorized to update this review" }
+ *               TokenMissing: # Another example for a different 401 reason
+ *                 value: { "message": "Not authorized, no token" }
  *       404:
  *         description: Review not found
  *         content:
@@ -105,12 +108,19 @@ const { check } = require('express-validator');
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/Error'
+ *             examples: # Using 'examples' for multiple scenarios
+ *               NotOwner:
+ *                 value: { "message": "User not authorized to delete this review" } # Example for delete
+ *               TokenMissing:
+ *                 value: { "message": "Not authorized, no token" }
  *       404:
  *         description: Review not found
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/Error'
+ *               type: object
+ *               properties:
+ *                 message: { type: string, example: "Review not found" }
  *       500:
  *         description: Server error
  *         content:
