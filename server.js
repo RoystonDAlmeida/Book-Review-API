@@ -15,6 +15,12 @@ const app = express();
 // Body parser middleware
 app.use(express.json()); // To accept JSON data in req.body
 
+// Server Swagger API JSON file on swagger.json endpoint
+app.get('/api-docs/swagger.json', (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.send(swaggerSpec);
+})
+
 // Serve Swagger UI documentation at /api-docs
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
