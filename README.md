@@ -108,7 +108,7 @@ To explore and test the API with pre-configured requests, use the official **Boo
 
 You can also directly access the public workspace:
 
-<a href="https://www.postman.com/roystondalmeida/book-review-api" target="_blank"><img src="https://run.pstmn.io/button.svg" alt="View Workspace in Postman" style="width: 200px; height: 32px;"></a>
+<a href="https://www.postman.com/roystondalmeida/book-review-api" target="_blank"><img src="https://run.pstmn.io/button.svg" alt="View Workspace in Postman" style="width: 128px; height: 32px;"></a>
 
 **1. Get the Collection:**
 *   **Desktop App:** Click the "Run in Postman" button below to fork or import the collection into your workspace.
