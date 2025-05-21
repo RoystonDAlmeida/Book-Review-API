@@ -12,7 +12,6 @@ Welcome to the Book Review API! This robust RESTful service empowers users to se
   - [⚙️ Environment Variables Setup](#️-environment-variables-setup)
   - [🚀 How to Run Locally](#-how-to-run-locally)
   - [API Documentation (Swagger UI)](#api-documentation-swagger-ui)
-  - [📬 Using Postman](#-using-postman)
   - [📬 Using Postman (Desktop App or VS Code Extension)](#-using-postman-desktop-app-or-vs-code-extension)
   - [💾 Database Schema](#-database-schema)
     - [Relationships](#relationships)
@@ -103,14 +102,15 @@ With Swagger UI, you can effortlessly:
 3.  In the "Value" field of the `bearerAuth` dialog, enter your JWT token(e.g., `eyJhbGciOiJIUzI1NiI...`).
 4.  Click "Authorize" and then "Close". You can now test protected endpoints!
 
-## 📬 Using Postman
 ## 📬 Using Postman (Desktop App or VS Code Extension)
 
 To explore and test the API with pre-configured requests, use the official **Book Review API Postman Collection**. The general setup for using this collection is similar whether you're using the Postman Desktop App or the Postman VS Code Extension.
 
 **1. Get the Collection:**
 *   **Desktop App:** Click the "Run in Postman" button below to fork or import the collection into your workspace.
+
     <a href="https://www.postman.com/roystondalmeida/book-review-api/collection/xsbk00r/book-review-api" target="_blank"><img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;"></a>
+
     This will allow you to:
     *   **Fork the collection:** This creates a linked copy in your own Postman workspace. You'll get updates if the original collection changes, and you can make your own modifications to your fork.
     *   **Import the collection:** This brings a standalone copy into your workspace.
