@@ -106,6 +106,10 @@ With Swagger UI, you can effortlessly:
 
 To explore and test the API with pre-configured requests, use the official **Book Review API Postman Collection**. The general setup for using this collection is similar whether you're using the Postman Desktop App or the Postman VS Code Extension.
 
+You can also directly access the public workspace:
+
+<a href="https://www.postman.com/roystondalmeida/book-review-api" target="_blank"><img src="https://run.pstmn.io/button.svg" alt="View Workspace in Postman" style="width: 200px; height: 32px;"></a>
+
 **1. Get the Collection:**
 *   **Desktop App:** Click the "Run in Postman" button below to fork or import the collection into your workspace.
 
